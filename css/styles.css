@@ -1,0 +1,355 @@
+/* GLOBAL  */
+:root {
+  --NAVY-BLUE: #2e2f42;
+  --WHITE: #fff;
+  --SLATE: #434455;
+
+  /* web logo */
+  --CLOUD: #f4f4fd;
+  --IRIS: #4d5ae5;
+}
+
+* {
+  margin: 0px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--SLATE);
+  width: 1440px;
+  height: 2592px;
+}
+
+.section-topline a,
+.section-footer a {
+  text-decoration: none;
+}
+
+/* GLOBAL  */
+
+/* index html start*/
+/* index html start*/
+/* index html start*/
+
+/* HEADER SECTION START*/
+
+.section-topline .logo-web,
+.section-topline .logo-studio {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  color: var(--IRIS);
+}
+.section-topline .logo-studio {
+  color: var(--NAVY-BLUE);
+}
+
+.section-topline-logo {
+  padding: 24px;
+  padding-left: 156px;
+  padding-right: 40px;
+}
+
+.section-topline .contacts {
+  padding-left: 332px;
+}
+/* .section-topline .contacts .telno {
+  padding-left: 40px;
+} */
+
+.menu a {
+  color: var(--NAVY-BLUE);
+}
+.contacts a {
+  color: var(--SLATE);
+}
+.menu a:hover,
+.menu a:focus,
+.contacts a:hover,
+.contacts a:focus {
+  color: rgba(77, 90, 229, 1);
+}
+
+/* topline flex  */
+
+.section-topline {
+  display: inline-flex;
+  height: 72px;
+  align-items: center;
+  flex-shrink: 0;
+}
+.section-topline ul {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* HEADER SECTION END*/
+
+/* BODY SECTION  START*/
+
+/* HERO SECTION START */
+.hero-image {
+  width: 1440px;
+  height: 600px;
+  flex-shrink: 0;
+  background: var(--NAVY-BLUE, #2e2f42);
+
+  /* text-align: center; */
+}
+.hero-image .center {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* margin: auto; */
+}
+
+.hero-image h1 {
+  width: 496px;
+
+  color: var(--WHITE, #fff);
+  text-align: center;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px; /* 107.143% */
+  letter-spacing: 1.12px;
+}
+
+/* .hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .hero-image .div-button {
+  width: 496px;
+  display: inline-flex;
+
+  align-items: flex-start;
+  gap: 10px;
+  justify-content: center;
+} */
+.divbutton {
+  width: 496px;
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hero-image button {
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+
+  border-radius: 4px;
+  background: var(--IRIS, #4d5ae5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  color: var(--WHITE, #fff);
+}
+
+.hero-imagess span {
+  /* Button Text */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+.hero-image button:focus,
+.hero-image button:hover {
+  cursor: pointer;
+  border-radius: 4px;
+  background: var(--CLOUD, #f4f4fd);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: var(--IRIS, #4d5ae5);
+}
+
+/* HERO SECTION END */
+
+/* WHAT WE DO & OUR TEAM SECTION START */
+
+/* <-- section-traits attributes --> */
+
+.list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.section-traits h3,
+.section-team h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--NAVY-BLUE);
+}
+
+.section-traits p,
+.section-team p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--SLATE);
+}
+
+.section-wedo h2,
+.section-team h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  /* margin-left: 589px; */
+  color: var(--NAVY-BLUE);
+}
+
+/* <-- section-traits flex --> */
+.section-traits {
+  width: 1440px;
+  height: 104px;
+  flex-shrink: 0;
+
+  /* margin: 120px 156px; */
+}
+
+.section-traits li {
+  display: inline-flex;
+  /* width: 264px; */
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.section-traits .list {
+  display: flex;
+  justify-content: center;
+  margin: 120px 156px;
+  gap: 24px;
+}
+/* SECTION 2 */
+
+.section-wedo {
+  width: 1440px;
+  height: 412px;
+  flex-shrink: 0;
+}
+
+.section-wedo h2 {
+  margin: 120px 559px;
+  margin-bottom: 72px;
+}
+.section-wedo .list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.section-wedo li {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* SECTION 3 */
+.section-team {
+  width: 1440px;
+  height: 732px;
+  flex-shrink: 0;
+  background: var(--CLOUD, #f4f4fd);
+  margin-top: 120px;
+}
+
+.section-team h2 {
+  text-align: center;
+  padding: 120px 639px;
+  padding-bottom: 72px;
+}
+
+.section-team li {
+  display: inline-flex;
+  padding-bottom: 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  border-radius: 0px 0px 4px 4px;
+  background: var(--WHITE, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.section-team p,
+.section-team h3 {
+  margin: 0px;
+}
+
+.section-team div {
+  display: flex;
+  width: 232px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-team .list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* WHAT WE DO & OUR TEAM SECTION END */
+
+.section-footer {
+  width: 1440px;
+  height: 312px;
+  flex-shrink: 0;
+  background: var(--NAVY-BLUE, #2e2f42);
+  padding-top: 100px;
+  padding-left: 156px;
+  padding-bottom: 100px;
+}
+
+.section-footer .paragraph {
+  width: 264px;
+  height: 112px;
+  flex-shrink: 0;
+
+  color: var(--CLOUD, #f4f4fd);
+
+  /* Body */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+.section-footer .logo-web,
+.section-footer .logo-studio {
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  color: var(--IRIS);
+}
+.section-footer .logo-studio {
+  color: var(--CLOUD);
+}
+
+/* BODY SECTION  END*/
+
+/* index html end*/
+/* index html end*/
+/* index html end*/
