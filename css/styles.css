@@ -54,20 +54,16 @@ body {
 .section-topline .contacts {
   padding-left: 332px;
 }
-/* .section-topline .contacts .telno {
-  padding-left: 40px;
-} */
 
-.menu a {
+.menu .a {
   color: var(--NAVY-BLUE);
 }
-.contacts a {
+.contacts .a {
   color: var(--SLATE);
 }
-.menu a:hover,
-.menu a:focus,
-.contacts a:hover,
-.contacts a:focus {
+
+.section-topline .a:hover,
+.section-topline .a:focus {
   color: rgba(77, 90, 229, 1);
 }
 
@@ -179,6 +175,16 @@ body {
 
 /* <-- section-traits attributes --> */
 
+.section-traits .icons {
+  width: 264px;
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: var(--CLOUD);
+}
+
 .list {
   padding-left: 0;
   list-style: none;
@@ -192,8 +198,7 @@ body {
   color: var(--NAVY-BLUE);
 }
 
-.section-traits p,
-.section-team p {
+.p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -261,8 +266,8 @@ body {
 /* SECTION 3 */
 .section-team {
   width: 1440px;
-  height: 732px;
-  flex-shrink: 0;
+  /* height: 732px; */
+  /* flex-shrink: 0; */
   background: var(--CLOUD, #f4f4fd);
   margin-top: 120px;
 }
@@ -273,11 +278,17 @@ body {
   padding-bottom: 72px;
 }
 
+.section-team .list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
 .section-team li {
-  display: inline-flex;
+  display: flex;
   padding-bottom: 32px;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   gap: 32px;
 
@@ -288,24 +299,30 @@ body {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.section-team p,
-.section-team h3 {
-  margin: 0px;
-}
-
-.section-team div {
+.section-team .team-caption {
   display: flex;
   width: 232px;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 8px;
 }
 
-.section-team .list {
+.section-team .icons {
+  /* width: 232px; */
+  display: flex;
+  justify-content: space-around;
+  gap: 24px;
+}
+.section-team .a {
+  /* padding: 12px 14px; */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
-  gap: 24px;
+  align-items: center;
+  background-color: var(--IRIS);
+  fill: var(--WHITE);
 }
 
 /* WHAT WE DO & OUR TEAM SECTION END */
@@ -320,11 +337,10 @@ body {
   padding-bottom: 100px;
 }
 
-.section-footer .paragraph {
+.section-footer .p {
   width: 264px;
   height: 112px;
   flex-shrink: 0;
-
   color: var(--CLOUD, #f4f4fd);
 
   /* Body */
