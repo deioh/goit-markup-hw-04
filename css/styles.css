@@ -242,9 +242,14 @@ body {
 /* SECTION 2 */
 
 .section-wedo {
+  padding: 120px 0px;
   width: 1440px;
-  height: 412px;
-  flex-shrink: 0;
+  /* height: 412px; */
+  height: auto;
+  /* flex-shrink: 0; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* padding-bottom: 120px; */
 }
 
 .section-wedo h2 {
@@ -266,10 +271,13 @@ body {
 /* SECTION 3 */
 .section-team {
   width: 1440px;
-  /* height: 732px; */
-  /* flex-shrink: 0; */
+  height: 732px;
   background: var(--CLOUD, #f4f4fd);
-  margin-top: 120px;
+  /* flex-shrink: 0; */
+  /* margin-top: 120px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* padding-top: 120px; */
 }
 
 .section-team h2 {
@@ -326,6 +334,17 @@ body {
 }
 
 /* WHAT WE DO & OUR TEAM SECTION END */
+
+/*Customers section start*/
+.section-customers .h2 {
+  text-align: center;
+  color: var(--NAVY-BLUE, #2e2f42);
+  padding: 120px 0px;
+
+  font-size: 36px;
+  line-height: 40px; /* 111.111% */
+  letter-spacing: 0.72px;
+}
 
 .section-footer {
   width: 1440px;
